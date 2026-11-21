@@ -27,7 +27,7 @@
 - `report/team/bang_chi_phi.md` — báo cáo A1–A4, B1–B4.
 - `src/lab13.py` — code D1/E1, giữ nguyên phần A/B của nhóm.
 - Kết quả terminal `python lab13.py` — ba phép thử A1 đạt, chương trình chạy hết A/B/D1/E1.
-- Pull Request: bổ sung URL và commit SHA thực tế sau khi push thành công.
+- Pull Request: f927f03b98dd70813356fd12ba0d0a209378e7c5
 
 ## 5. Công cụ AI đã dùng
 
@@ -38,4 +38,3 @@
 
 - Đã hoàn thiện nội dung báo cáo A/B và triển khai code D1/E1; chương trình chạy thành công trên máy với dữ liệu giả lập của lab.
 - Kết quả D1 cho thấy thiết kế chỉ có 20 nhân viên/nhóm chưa đủ cỡ mẫu hiệu dụng để phát hiện mức cải thiện 5 điểm phần trăm theo các giả định của bài.
-- Cần hoàn tất việc kiểm tra thay đổi trên Git, bổ sung bằng chứng Pull Request/commit và chờ nhóm review, merge.
