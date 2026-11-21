@@ -22,7 +22,9 @@ CPS 4.472 đ/việc; chi phí cả hệ thống 5.865 đ/yêu cầu, bằng 0,49
 
 Chỉ số trong đợt chạy thử: đóng trong 24 giờ và không mở lại 7 ngày 82,83%; bỏ qua gợi ý 27,12%; mở lại 4,25%. Không có đối chứng để kết luận cải thiện. D1 yêu cầu 1.251 yêu cầu/nhóm, hoặc 3.103 yêu cầu và 42 nhân viên/nhóm khi DE = 2,48.
 
-Đề xuất: **Go có điều kiện** cho pilot nội địa + hàng nặng tại D01–D06. Thiết kế chọn 20 nhân viên/nhóm, ≥299 yêu cầu/người, 5.980 yêu cầu thực/nhóm, DE 6,96, khoảng 859 hiệu dụng, MDE 6 điểm %. Power chỉ 0,642 nếu hiệu ứng thật 5 điểm %. Ngày 04/12/2026: Kỹ sư trưởng agent kiểm thử khắc phục 5 loại lỗi, Giám đốc vận hành xác nhận đủ 40 người và duyệt lịch. Ngày 07/12: Kế toán trưởng kiểm tra đo chi phí thật trước khởi động. Ngày 19/01/2027: Giám đốc vận hành xét quyết định theo cỡ mẫu, hiệu quả, an toàn và chi phí; thiếu mẫu thì chốt lại lịch trước khi đọc chỉ số chính. Đây là lịch đề xuất trong hồ sơ; kết quả duyệt chéo chưa có.
+Đề xuất: **Go có điều kiện** cho pilot nội địa + hàng nặng tại D01–D06. Thiết kế chọn 20 nhân viên/nhóm, ≥299 yêu cầu/người, 5.980 yêu cầu thực/nhóm, DE 6,96, khoảng 859 hiệu dụng, MDE 6 điểm %. Power chỉ 0,642 nếu hiệu ứng thật 5 điểm %. Ngày 04/12/2026: Kỹ sư trưởng agent kiểm thử khắc phục 5 loại lỗi, Giám đốc vận hành xác nhận đủ 40 người và duyệt lịch. Ngày 07/12: Kế toán trưởng kiểm tra đo chi phí thật trước khởi động. Ngày 19/01/2027: Giám đốc vận hành xét quyết định theo cỡ mẫu, hiệu quả, an toàn và chi phí; thiếu mẫu thì chốt lại lịch trước khi đọc chỉ số chính.
+
+**Kết quả duyệt chéo Gate 2a:** Hội đồng **NhomTTBH** chấm **NhomCDEF** đạt **30/30** (`10/10` cả ba tiêu chí), quyết định **Go có điều kiện** cho kế hoạch pilot `noi_dia + hang_nang` tại D01–D06 (yêu cầu xác nhận đủ 40 nhân viên, ≥299 yêu cầu/người, hoàn tất kiểm thử 5 loại lỗi, đo thời gian thật trước khởi động và giữ nguyên phạm vi/lùi lịch nếu đến `19/01/2027` chưa đủ ~859 mẫu hiệu dụng/nhóm). Chiều ngược lại, **NhomCDEF** chấm **NhomTTBH** đạt **30/30** với quyết định **Go có điều kiện** kèm hai cổng chặn bổ sung trước ngày `07/12/2026` (chi tiết xem [phiếu chấm](phieu_cham.md)).
 
 ## 5. Khó khăn và cách xử lý
 
@@ -34,7 +36,7 @@ Thao: code A–B, chỉ số và rủi ro. Dũng: kiểm số, bảng chi phí, 
 
 ## 7. Hạn chế và hướng cải thiện
 
-Đo thời gian xem/làm lại thực tế thay các cột simulated; bổ sung đối chứng đồng thời và theo dõi lỗi ngầm bằng kiểm tra mẫu. Chỉ mở rộng khi đủ mẫu, chênh chỉ số chính ≥6 điểm %, cận dưới khoảng tin cậy 95% >0 và đạt luật dừng. Bổ sung kết quả duyệt chéo khi có bằng chứng.
+Đo thời gian xem/làm lại thực tế thay các cột simulated; bổ sung đối chứng đồng thời và theo dõi lỗi ngầm bằng kiểm tra mẫu. Chỉ mở rộng khi đủ mẫu, chênh chỉ số chính ≥6 điểm %, cận dưới khoảng tin cậy 95% >0 và đạt luật dừng.
 
 ## 8. Tài liệu tham khảo
 
