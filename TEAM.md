@@ -5,7 +5,7 @@
 - Tên nhóm: NhomCDEF
 - Lớp: L3A
 - Repo nhóm: `K5-L3A-DAY13-NhomCDEF-LaunchEconomics`
-- URL repo, nhánh nộp, commit chốt: https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics · nhánh `main` · các PR đã gộp: #1, #2, #6, #7, #8, #9, #10, #11, #12, #13, #14 và PR #15 chốt cuối sau duyệt chéo Gate 2a.
+- URL repo, nhánh nộp, commit chốt: https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics · nhánh `main` · commit chốt trước PR #16: `deea982` (đã gộp 12 PR: `#1`, `#2`, `#6`, `#7`, `#8`, `#9`, `#10`, `#11`, `#12`, `#13`, `#14`, `#15`; đồng bộ hoàn tất tại PR #16).
 
 ## Thành viên
 
@@ -50,14 +50,14 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 - Tách chi phí theo loại A3 (`noi_dia` `2.696 đ = 0,22×`, `hang_nang` `8.221 đ = 0,69×`, `quoc_te` `22.515 đ = 1,88×` có tỉ lệ `ok` giảm `30,0% → 11,4% → 2,2%`, `doi_tac` `10.215 đ = 0,85×`, `simulated`) và phân bổ chi phí cố định 40 triệu đ/tháng A4 (`4.599 đ = 0,38×` ở 45.000 yc/tháng và `5.784 đ = 0,48×` ở nửa khối lượng, `simulated`).
 - Cài đặt bảng độ nhạy B1–B4: xác định top 3 yếu tố nhạy nhất (`1. Số ca làm lại +51,8% · 2. Tỉ lệ xem lại +40,7% · 3. Lương nhân viên +23,1%`, `simulated`), đổi cặp `6.543 đ (+46,3%)` (`simulated`), giới hạn 2 lần chạy rẻ nhất cả hệ thống (`6.901.220 đ` `simulated`), và kịch bản xem lại 100% B4 ở 2 mốc làm lại (`11.743 đ = 0,98×` với 9,0 phút/ca và `12.415 đ = 1,03×` với 15,3 phút/ca, `simulated`).
 - Hoàn thiện `report/team/chi_so.md`: 3 chỉ số tính thử E1 (`82,83%`, `27,12%`, `4,25%`; phạm vi `noi_dia + hang_nang` là `3,97%`), 2 chỉ số tự đề xuất, 10 event có `trace_id` kèm kiểm tra chéo và 3 dòng rủi ro kinh tế (`simulated`).
-- Chuẩn hóa toàn bộ hồ sơ trước duyệt chéo Gate 2a và tổng hợp kết quả duyệt chéo với NhomTTBH (`30/30`).
+- Chuẩn hóa toàn bộ hồ sơ trước duyệt chéo Gate 2a và tổng hợp kết quả duyệt chéo 2 chiều với NhomTTBH (`30/30`).
 
 ### Bằng chứng
 
-- PR #1 (`feat/thao-cost-model`, commit `ae97be1`, merge `03258a1`): https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/1 — `src/lab13.py`.
-- PR #2 (`feat/thao-metrics-risk`, commit `518545f`, merge `b26318b`): https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/2 — `report/team/chi_so.md`.
-- PR #6 (`docs/thao-personal-report`, commit `15d5339`, merge `29cdc57`): https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/6 — `report/team/2A202603534_LeSongThao.md`.
-- PR #10 (`21be7df`), PR #13 (`0f55a11`) và PR #15 (`docs/final-gate2a-submission`): chuẩn hóa `TEAM.md`, `bang_loi.md`, `phieu_cham.md` và `group_report.md`.
+- [PR #1](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/1) (commit `ae97be1`, merge `03258a1`): `src/lab13.py`.
+- [PR #2](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/2) (commit `518545f`, merge `b26318b`): `report/team/chi_so.md`.
+- [PR #6](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/6) (commit `15d5339`, merge `29cdc57`): [Báo cáo cá nhân](report/team/2A202603534_LeSongThao.md).
+- [PR #10](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/10) (`21be7df`), [PR #13](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/13) (`0f55a11`), [PR #15](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/15) (`deea982`) và nhánh `docs/add-ttbh-review-of-cdef` (PR #16): chuẩn hóa `TEAM.md`, `bang_loi.md`, `phieu_cham.md` và `group_report.md`.
 
 ## BuiNguyenDung-2A202603587
 
@@ -77,7 +77,7 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 ### Bằng chứng
 
 - [PR #7](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/7) (commit `f927f03`, merge `f5762c0`): `report/team/bang_chi_phi.md` và phần D1/E1 trong `src/lab13.py`.
-- [Báo cáo cá nhân](report/team/2A202603587_BuiNguyenDung.md) (commit `ea09874`, `86789d6`).
+- [Báo cáo cá nhân](report/team/2A202603587_BuiNguyenDung.md) (commit `ea09874`, `86789d6`, cập nhật `TEAM.md` tại `472be8d`).
 - Kết quả terminal `python lab13.py` (A1 đạt, A/B/D1/E1 chạy thành công).
 
 ## HoangVanBao-2A202603549
@@ -93,12 +93,12 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 - Đối chiếu 20 ca lỗi với bộ nhãn của Quảng đạt đồng thuận **16/20 = 80%**, thống nhất quy tắc phân biệt cho 4 ca lệch (4, 14, 15, 18) và hoàn thiện bảng khắc phục 5 ca đủ năm loại.
 - Thiết kế `report/team/pilot_plan.yaml`: phân ngẫu nhiên theo nhân viên 20 + 20, MDE +6 điểm %, `m ≥ 299`, `DE = 6,96`, công khai power **0,642** ở mức +5 điểm %, 4 luật dừng đủ bốn vế NẾU – TRONG – THÌ – KHÔNG THÌ, rollback 30 phút, tỷ lệ mở lại phạm vi pilot `39/982 = 3,97%` (`simulated`); đọc hợp lệ bằng `yaml.safe_load`.
-- Hoàn thiện phiếu chấm `report/team/phieu_cham.md` đánh giá NhomTTBH đạt `30/30` (`Go có điều kiện`) cùng câu hỏi và phần xác nhận của đội bạn tại phiên duyệt chéo Gate 2a.
+- Chuẩn bị `report/team/phieu_cham.md` phục vụ phiên duyệt chéo Gate 2a và hoàn thiện đầy đủ 2 chiều đánh giá (`NhomCDEF` ↔ `NhomTTBH`, cùng đạt `30/30 · Go có điều kiện`).
 
 ### Bằng chứng
 
-- [PR #9](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/9) (commit `2392b18`, merge `e927958`): `report/team/bang_loi.md`, `report/team/pilot_plan.yaml`, `report/team/phieu_cham.md`, `report/team/2A202603549_HoangVanBao.md`.
-- Bản chốt `report/team/phieu_cham.md` sau phiên duyệt chéo với NhomTTBH.
+- [PR #9](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/9) (commit `2392b18`, merge `e927958`, cập nhật `fddbb6e`): `report/team/bang_loi.md`, `report/team/pilot_plan.yaml`, `report/team/phieu_cham.md`, [Báo cáo cá nhân](report/team/2A202603549_HoangVanBao.md).
+- Bản chốt `report/team/phieu_cham.md` (PR #15 `deea982` và nhánh `docs/add-ttbh-review-of-cdef` PR #16) sau phiên duyệt chéo với NhomTTBH.
 
 ## NguyenBaQuang-2A202603555
 
