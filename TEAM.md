@@ -5,7 +5,7 @@
 - Tên nhóm: NhomCDEF
 - Lớp: L3A
 - Repo nhóm: `K5-L3A-DAY13-NhomCDEF-LaunchEconomics`
-- URL repo, nhánh nộp, commit chốt: https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics · nhánh `main` · các PR đã gộp: #1, #2, #6, #7, #8, #9, #10, #11, #12, #13 và PR chốt cuối sau duyệt chéo Gate 2a.
+- URL repo, nhánh nộp, commit chốt: https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics · nhánh `main` · các PR đã gộp: #1, #2, #6, #7, #8, #9, #10, #11, #12, #13, #14 và PR #15 chốt cuối sau duyệt chéo Gate 2a.
 
 ## Thành viên
 
@@ -57,7 +57,7 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 - PR #1 (`feat/thao-cost-model`, commit `ae97be1`, merge `03258a1`): https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/1 — `src/lab13.py`.
 - PR #2 (`feat/thao-metrics-risk`, commit `518545f`, merge `b26318b`): https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/2 — `report/team/chi_so.md`.
 - PR #6 (`docs/thao-personal-report`, commit `15d5339`, merge `29cdc57`): https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/6 — `report/team/2A202603534_LeSongThao.md`.
-- PR #10 (`21be7df`), PR #13 (`0f55a11`) và nhánh `docs/final-gate2a-submission`: chuẩn hóa `TEAM.md`, `bang_loi.md`, `phieu_cham.md` và `group_report.md`.
+- PR #10 (`21be7df`), PR #13 (`0f55a11`) và PR #15 (`docs/final-gate2a-submission`): chuẩn hóa `TEAM.md`, `bang_loi.md`, `phieu_cham.md` và `group_report.md`.
 
 ## BuiNguyenDung-2A202603587
 
@@ -119,4 +119,5 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 - [PR #8](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/8) (commit `7cdbeb5`, merge `c33de17`): hồ sơ ban đầu và bộ nhãn người 2.
 - [PR #11](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/11) (commit `3064ada`, merge `ba6e00b`): chốt hồ sơ `Go có điều kiện` và hai báo cáo.
 - [PR #12](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/12) (commit `f469b00`, merge `3d508b0`): chuẩn hóa hồ sơ, báo cáo cá nhân và thông tin thành viên.
+- [PR #14](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/14) (commit `0579263`, merge `82ec884`): khôi phục thông tin và đóng góp Nguyễn Bá Quảng trong `TEAM.md`.
 - [Báo cáo cá nhân](report/team/2A202603555_NguyenBaQuang.md), [hồ sơ launch](report/team/ho_so_launch_v0.md), [báo cáo nhóm](report/team/group_report.md).
