@@ -5,16 +5,16 @@
 - Tên nhóm: NhomCDEF
 - Lớp: L3A
 - Repo nhóm: `K5-L3A-DAY13-NhomCDEF-LaunchEconomics`
-- URL repo, nhánh nộp, commit chốt: https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics · nhánh `main` · commit chốt: cập nhật ở commit đóng gói cuối buổi sau khi đủ đóng góp của 4 thành viên.
+- URL repo, nhánh nộp, commit chốt: https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics · nhánh `main` · commit chốt: cập nhật ở commit đóng gói cuối buổi sau khi hoàn tất duyệt chéo Gate 2a.
 
 ## Thành viên
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Lê Sông Thao | 2A202603534 | sirothao123@gmail.com | https://github.com/lesongthao | Người viết code (CP1–CP2), phụ trách `chi_so.md` (CP5), nhóm trưởng điều phối PR |
-|   2 |Bùi Nguyên Dũng|2A202603587|dung208042@gmail.com|https://github.com/Nesto08|	Kiểm chứng A/B, báo cáo chi phí, code D1/E1|
-|   3 |        |      |       |        |         |
-|   4 | Nguyễn Bá Quảng | 2A202603555 | nbquang04@gmail.com | https://github.com/nbquang04 | Người gắn nhãn 2 (C), giữ hồ sơ launch v0 (E3), báo cáo nhóm |
+|   2 | Bùi Nguyên Dũng | 2A202603587 | dung208042@gmail.com | https://github.com/Nesto08 | Kiểm chứng A/B (`bang_chi_phi.md`), đổi người viết code D1/E1 (`src/lab13.py`) |
+|   3 | Hoàng Văn Bảo | 2A202603549 | 26ai.baohv@vinuni.edu.vn | https://github.com/BaoAIuet | Người gắn nhãn 1 (CP3), phụ trách `pilot_plan.yaml` (CP4), phiếu chấm hội đồng (CP5) |
+|   4 |        |      |       |        |         |
 
 Bốn vai của lab:
 
@@ -23,33 +23,17 @@ Bốn vai của lab:
 - **Người gắn nhãn 1:** đọc đề, theo dõi điều kiện "Xong khi"; gắn nhãn 20 ca độc lập ở CP3.
 - **Người gắn nhãn 2, kiêm giữ hồ sơ:** điền `report/team/ho_so_launch_v0.md` từ đầu buổi; gắn nhãn 20 ca độc lập ở CP3.
 
-Đổi người viết code sau giờ giải lao, để ít nhất hai người trong nhóm tự tay tính được chi phí.
+Đổi người viết code sau giờ giải lao (từ Lê Sông Thao ở CP1–CP2 sang Bùi Nguyên Dũng ở CP4), để ít nhất hai người trong nhóm tự tay tính được chi phí.
 
 ## Cá nhân
 
-Mỗi thành viên đồng thời tạo một báo cáo riêng trong `report/` theo dạng:
+Mỗi thành viên tạo một báo cáo riêng trong `report/team/` theo dạng:
 
 ```text
 report/team/MSSV_HoTen.md
 ```
 
 Ví dụ: `report/team/20241234_NguyenVanAn.md`.
-
-Sao chép mục dưới đây cho từng thành viên.
-
-## HoVaTen-MSSV
-
-### Phần việc phụ trách
-
--
-
-### Đóng góp cụ thể
-
--
-
-### Bằng chứng
-
--
 
 ## LeSongThao-2A202603534
 
@@ -90,27 +74,25 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Bằng chứng
 
-- `report/team/bang_chi_phi.md`
-- `src/lab13.py`
+- [PR #7](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/7) (commit `f927f03`, merge `f5762c0`): `report/team/bang_chi_phi.md` và phần D1/E1 trong `src/lab13.py`.
+- [Báo cáo cá nhân](report/team/2A202603587_BuiNguyenDung.md) (commit `ea09874`, `86789d6`).
 - Kết quả terminal `python lab13.py` (A1 đạt, A/B/D1/E1 chạy thành công).
 
-## NguyenBaQuang-2A202603555
+## HoangVanBao-2A202603549
 
 ### Phần việc phụ trách
 
-- C: Bộ nhãn người 2 cho 20 ca lỗi, đối chiếu bảng lỗi với Bảo.
-- E3: Tổng hợp hồ sơ launch v0 và đề xuất Go có điều kiện.
-- Viết báo cáo nhóm và báo cáo cá nhân.
+- Soát điều kiện hoàn thành CP1–CP2 theo đề và `RUBRIC.md`.
+- Người gắn nhãn 1 (CP3): gắn nhãn 20 ca lỗi theo năm loại của Google PAIR, đối chiếu với Quảng và hoàn thiện bảng khắc phục 5 loại (`report/team/bang_loi.md`).
+- Phụ trách Nhiệm vụ D (CP4): xây dựng kế hoạch pilot có đối chứng trong `report/team/pilot_plan.yaml`.
+- Phụ trách chuẩn bị và ghi nhận phiếu duyệt chéo Gate 2a (`report/team/phieu_cham.md`).
 
 ### Đóng góp cụ thể
 
-- Điền 7 mục hồ sơ, ghi trạng thái Giả lập cho mục 1, 2, 3, 7; giữ nhãn simulated cho chi phí dẫn xuất.
-- Nêu cả số bất lợi và chốt phạm vi pilot nội địa + hàng nặng, có điều kiện, vai trò và ngày kiểm tra.
-- Cung cấp 20 nhãn người 2; tỷ lệ trùng với cột người 1 là 16/20 = 80%; đối chiếu quy tắc cho bốn ca lệch.
-- Chạy kiểm chứng A–B/D1/E1, đọc YAML và kiểm tra bốn luật dừng; hoàn thiện hai báo cáo.
+- Đối chiếu 20 ca lỗi với bộ nhãn của Quảng đạt đồng thuận **16/20 = 80%**, thống nhất quy tắc phân biệt cho 4 ca lệch (4, 14, 15, 18) và hoàn thiện bảng khắc phục 5 ca đủ năm loại.
+- Thiết kế `report/team/pilot_plan.yaml`: phân ngẫu nhiên theo nhân viên 20 + 20, MDE +6 điểm %, `m ≥ 299`, `DE = 6,96`, công khai power **0,642** ở mức +5 điểm %, 4 luật dừng đủ bốn vế NẾU – TRONG – THÌ – KHÔNG THÌ, rollback 30 phút, tỷ lệ mở lại phạm vi pilot `39/982 = 3,97%` (`simulated`); đọc hợp lệ bằng `yaml.safe_load`.
+- Chuẩn bị `report/team/phieu_cham.md` phục vụ phiên duyệt chéo Gate 2a.
 
 ### Bằng chứng
 
-- [PR #8](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/8): hồ sơ ban đầu và bộ nhãn người 2.
-- [PR #11](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/11): hồ sơ chốt và báo cáo.
-- [Báo cáo cá nhân](report/team/2A202603555_NguyenBaQuang.md), [hồ sơ launch](report/team/ho_so_launch_v0.md), [báo cáo nhóm](report/team/group_report.md).
+- [PR #9](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/9) (commit `2392b18`, merge `e927958`): `report/team/bang_loi.md`, `report/team/pilot_plan.yaml`, `report/team/phieu_cham.md`, `report/team/2A202603549_HoangVanBao.md`.
