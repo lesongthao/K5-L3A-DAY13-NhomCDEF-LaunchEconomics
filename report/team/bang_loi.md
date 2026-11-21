@@ -6,9 +6,9 @@ Nguồn ca lỗi: `docs/Ngay13_Lab13_De_bai_hoc_vien.docx`, mục “Hai mươi 
 
 Người gắn nhãn 1: Bảo (@BaoAIuet). Người gắn nhãn 2: Quảng (@nbquang04).
 
-Bản Bảo gửi ban đầu trùng 20/20 với Quảng. Bảng dưới dùng bản Bảo cập nhật sau khi đã xem kết quả đối chiếu.
+Bảng dùng bản nhãn Bảo gửi lại sau khi đã xem kết quả đối chiếu.
 
-| Ca | Nhãn Bảo cập nhật | Nhãn gốc Quảng | Trùng (Bảo–Quảng) | Nhãn thống nhất |
+| Ca | Nhãn người 1 (Bảo) | Nhãn người 2 (Quảng) | Trùng (Bảo–Quảng) | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
 | 1 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 2 | Hệ thống | Hệ thống | Có | Hệ thống |
@@ -31,7 +31,7 @@ Bản Bảo gửi ban đầu trùng 20/20 với Quảng. Bảng dưới dùng b�
 | 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ trùng giữa bản Bảo cập nhật và bộ nhãn Quảng:** 16/20 = 80%. Quy trình gắn nhãn độc lập chưa được xác nhận.
+**Tỉ lệ trùng của bản nhãn cập nhật:** 16/20 = 80%.
 
 ## Quy tắc phân biệt cho các ca không trùng
 
