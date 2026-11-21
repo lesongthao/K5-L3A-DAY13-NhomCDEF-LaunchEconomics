@@ -14,7 +14,7 @@
 |   1 | Lê Sông Thao | 2A202603534 | sirothao123@gmail.com | https://github.com/lesongthao | Người viết code (CP1–CP2), phụ trách `chi_so.md` (CP5), nhóm trưởng điều phối PR |
 |   2 |Bùi Nguyên Dũng|2A202603587|dung208042@gmail.com|https://github.com/Nesto08|	Kiểm chứng A/B, báo cáo chi phí, code D1/E1|
 |   3 |        |      |       |        |         |
-|   4 |        |      |       |        |         |
+|   4 | Nguyễn Bá Quảng | 2A202603555 | nbquang04@gmail.com | https://github.com/nbquang04 | Người gắn nhãn 2 (C), giữ hồ sơ launch v0 (E3), báo cáo nhóm |
 
 Bốn vai của lab:
 
@@ -93,3 +93,24 @@ Sao chép mục dưới đây cho từng thành viên.
 - `report/team/bang_chi_phi.md`
 - `src/lab13.py`
 - Kết quả terminal `python lab13.py` (A1 đạt, A/B/D1/E1 chạy thành công).
+
+## NguyenBaQuang-2A202603555
+
+### Phần việc phụ trách
+
+- C: Bộ nhãn người 2 cho 20 ca lỗi, đối chiếu bảng lỗi với Bảo.
+- E3: Tổng hợp hồ sơ launch v0 và đề xuất Go có điều kiện.
+- Viết báo cáo nhóm và báo cáo cá nhân.
+
+### Đóng góp cụ thể
+
+- Điền 7 mục hồ sơ, ghi trạng thái Giả lập cho mục 1, 2, 3, 7; giữ nhãn simulated cho chi phí dẫn xuất.
+- Nêu cả số bất lợi và chốt phạm vi pilot nội địa + hàng nặng, có điều kiện, vai trò và ngày kiểm tra.
+- Cung cấp 20 nhãn người 2; tỷ lệ trùng với cột người 1 là 16/20 = 80%; đối chiếu quy tắc cho bốn ca lệch.
+- Chạy kiểm chứng A–B/D1/E1, đọc YAML và kiểm tra bốn luật dừng; hoàn thiện hai báo cáo.
+
+### Bằng chứng
+
+- [PR #8](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/8): hồ sơ ban đầu và bộ nhãn người 2.
+- [PR #11](https://github.com/lesongthao/K5-L3A-DAY13-NhomCDEF-LaunchEconomics/pull/11): hồ sơ chốt và báo cáo.
+- [Báo cáo cá nhân](report/team/2A202603555_NguyenBaQuang.md), [hồ sơ launch](report/team/ho_so_launch_v0.md), [báo cáo nhóm](report/team/group_report.md).
