@@ -205,10 +205,105 @@ def in_nhiem_vu_b(runs: pd.DataFrame, reqs: pd.DataFrame, cps_goc: float) -> Non
         print(f"- {nhan}: tổng {tong_b4:,.0f} đ -> CPS {cps_b4:,.0f} đ = {cps_b4/BASELINE:.2f}x [simulated] (hòa vốn xem <= {hoa_von:.1f} phút)")
 
 
+
+
+# DAY 13 · D1 + E1 — BỔ SUNG SAU PR #1
+import math
+from statistics import NormalDist
+
+
+def co_mau_hai_ti_le(p1=0.70, p2=0.75, alpha=0.05, power=0.80):
+    """Cỡ mẫu cho MỖI nhóm so sánh hai tỉ lệ, theo công thức của đề."""
+    if not (0 < p1 < 1 and 0 < p2 < 1 and p1 != p2):
+        raise ValueError('p1, p2 phải ở (0,1) và khác nhau')
+    if not (0 < alpha < 1 and 0 < power < 1):
+        raise ValueError('alpha/power phải ở (0,1)')
+    z_alpha = NormalDist().inv_cdf(1 - alpha / 2)
+    z_beta = NormalDist().inv_cdf(power)
+    pbar = (p1 + p2) / 2
+    n = ((z_alpha * math.sqrt(2 * pbar * (1 - pbar))
+         + z_beta * math.sqrt(p1 * (1 - p1) + p2 * (1 - p2)))
+         ** 2 / (p2 - p1) ** 2)
+    return math.ceil(n)
+
+
+def he_so_thiet_ke(m, icc=0.02):
+    """Design effect khi ngẫu nhiên hóa theo cụm."""
+    if m < 1 or not (0 <= icc < 1):
+        raise ValueError('m >= 1 và 0 <= icc < 1')
+    return 1 + (m - 1) * icc
+
+
+def co_mau_hieu_dung(so_cum, m, icc=0.02):
+    return so_cum * m / he_so_thiet_ke(m, icc)
+
+
+def chi_so_e1(reqs):
+    """3 chỉ số E1 tính trực tiếp từ CSV giả lập; không suy diễn tác động nhân quả."""
+    total = len(reqs)
+    xem = reqs[reqs['duoc_xem_lai'] == 1]
+    return {
+        'tong_yeu_cau': total,
+        'chinh_dem': int(((reqs['dong_trong_24h'] == 1) &
+                         (reqs['mo_lai_trong_7_ngay'] == 0)).sum()),
+        'chinh': float(((reqs['dong_trong_24h'] == 1) &
+                        (reqs['mo_lai_trong_7_ngay'] == 0)).mean()),
+        'duoc_xem_lai': len(xem),
+        'bo_qua_dem': int(xem['quyet_dinh_xem_lai'].isin(['sua', 'bo']).sum()),
+        'bo_qua': float(xem['quyet_dinh_xem_lai'].isin(['sua', 'bo']).mean()),
+        'mo_lai_dem': int((reqs['mo_lai_trong_7_ngay'] == 1).sum()),
+        'mo_lai': float((reqs['mo_lai_trong_7_ngay'] == 1).mean()),
+        'mo_lai_noi_dia_hang_nang': float(
+            (reqs.loc[reqs['loai'].isin(['noi_dia', 'hang_nang']),
+                      'mo_lai_trong_7_ngay'] == 1).mean()),
+    }
+
+
+def in_ket_qua_d1_e1(reqs):
+    """Gọi sau khi đọc reqs trong khối __main__."""
+    from statsmodels.stats.power import NormalIndPower
+    from statsmodels.stats.proportion import proportion_effectsize
+
+    n5 = co_mau_hai_ti_le(.70, .75)
+    de = he_so_thiet_ke(75, .02)
+    n_per_group = math.ceil(n5 * de)
+    nhan_vien_per_group = math.ceil(n_per_group / 75)
+    n6 = co_mau_hai_ti_le(.70, .76)
+    # 20*m / (0.98 + .02*m) >= n6, giải ra m.
+    m_min = math.ceil(n6 * .98 / (20 - n6 * .02))
+    power5_at_n6 = NormalIndPower().power(
+        effect_size=abs(proportion_effectsize(.70, .75)),
+        nobs1=n6, alpha=.05, ratio=1)
+    print('\n=== D1 · CỠ MẪU VÀ POWER ===')
+    print(f'a) Theo yêu cầu (5 điểm): {n5:,} yêu cầu/nhóm')
+    print(f'b) Nhân viên m=75: DE={de:.2f}; {n_per_group:,} yêu cầu/nhóm; '
+          f'{nhan_vien_per_group} người/nhóm')
+    print(f'c) 20 người/nhóm: c/ICC = {20/.02:,.0f} hiệu dụng tối đa (< {n5})')
+    print(f'd) 6 depot/nhóm: c/ICC = {6/.02:,.0f} hiệu dụng tối đa')
+    print(f'e) Phát hiện 6 điểm: {n6} hiệu dụng/nhóm; m >= {m_min} YC/người')
+    print(f'   Power cho hiệu ứng thật 5 điểm tại n={n6}: {power5_at_n6:.3f}')
+
+    e = chi_so_e1(reqs)
+    print('\n=== E1 · 3 CHỈ SỐ TRÊN CSV GIẢ LẬP ===')
+    print(f"Chính: {e['chinh_dem']}/{e['tong_yeu_cau']} = {e['chinh']:.2%}")
+    print(f"Dùng: {e['bo_qua_dem']}/{e['duoc_xem_lai']} = {e['bo_qua']:.2%}")
+    print(f"An toàn: {e['mo_lai_dem']}/{e['tong_yeu_cau']} = {e['mo_lai']:.2%}")
+    print(f"Mở lại (nội địa + hàng nặng): {e['mo_lai_noi_dia_hang_nang']:.2%}")
+
+
+
 if __name__ == '__main__':
     runs = pd.read_csv('logix_runs.csv')
     reqs = pd.read_csv('logix_requests.csv', keep_default_na=False)
+
+    # Nhiệm vụ A1: Kiểm tra công thức
     kiem_tra_dap_an_biet_truoc()
+
+    # Nhiệm vụ A2, A3, A4: Mô hình chi phí
     kq_a2 = in_nhiem_vu_a(runs, reqs)
+
+    # Nhiệm vụ B1, B2, B3, B4: Phân tích độ nhạy
     in_nhiem_vu_b(runs, reqs, kq_a2['cps'])
-    # TODO CP4 · Nhiệm vụ D & E1 (TV2 bổ sung sau khi gộp PR #1).
+
+    # Nhiệm vụ D1 và E1: Cỡ mẫu, power và chỉ số
+    in_ket_qua_d1_e1(reqs)
